@@ -43,7 +43,7 @@ const Display = () => {
             <>
             <div className={styles.imgBox} onMouseMove={handleMouseMove} onMouseEnter={handleMouseEnter}>
             {showMessage && <div className={styles.message}>Move your mouse here to start calculating your IMC</div>}
-                <img className={styles.human} style={{ transform: `scale(${position.x/500}, ${position.y/500})` }} src="./src/assets/human.svg" alt=""></img> 
+                <img className={styles.human} style={{ transform: `scale(${position.x/500}, ${position.y/500})` }} src="https://raw.githubusercontent.com/danielcscruz/estaticos/c0b6ffb51ff14066a8f3428f18993ee52418eed5/assets/human.svg" alt=""></img> 
                 <div>
                     <table>
                         <tbody>
@@ -71,12 +71,12 @@ const Display = () => {
                     </table>
                 </div>
                 <img
-                    src="./src/assets/square.png"
+                    src="https://raw.githubusercontent.com/danielcscruz/estaticos/refs/heads/main/assets/square.png"
                     alt="square"
                     className={styles.squareV}
                     style={{ left:0, bottom: `${position.y}px`}}
                 /><img
-                    src="./src/assets/square.png"
+                    src="https://raw.githubusercontent.com/danielcscruz/estaticos/refs/heads/main/assets/square.png"
                     alt="square"
                     className={styles.squareH}
                     style={{  left: `${position.x}px`, bottom:0}}
