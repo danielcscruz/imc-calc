@@ -42,7 +42,10 @@ const Display = () => {
     return(
             <>
             <div className={styles.imgBox} onMouseMove={handleMouseMove} onMouseEnter={handleMouseEnter}>
-            {showMessage && <div className={styles.message}>Move your mouse here to start calculating your IMC</div>}
+            {showMessage ? (
+                <div className={styles.message}>Move your mouse here to start calculating your IMC</div>
+            ):(
+                <>
                 <img className={styles.human} style={{ transform: `scale(${position.x/500}, ${position.y/500})` }} src="https://raw.githubusercontent.com/danielcscruz/estaticos/c0b6ffb51ff14066a8f3428f18993ee52418eed5/assets/human.svg" alt=""></img> 
                 <div>
                     <table>
@@ -70,6 +73,8 @@ const Display = () => {
                         </tbody>
                     </table>
                 </div>
+                </>
+            )}
                 <img
                     src="https://raw.githubusercontent.com/danielcscruz/estaticos/refs/heads/main/assets/square.png"
                     alt="square"
