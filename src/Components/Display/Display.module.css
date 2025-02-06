@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+
+.human{
+    max-height: 500px;
+    max-width: 500px;
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+}
+
+table{
+    position: absolute; /* Position it inside .imgBox */
+    top: 0;             /* Align to top of .imgBox */
+    left: 10px; 
+
+}
+
+.imgBox{
+    font-size: 20px;
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+
+}
+
+.squareH, .squareV{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    overflow: hidden;
+}
