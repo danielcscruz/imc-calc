@@ -26,13 +26,13 @@ const Display = () => {
 
     let classification = "";
     if (imc < 18.5) {
-        classification = "Abaixo do peso";
+        classification = "Underweight";
     } else if (imc >= 18.5 && imc < 24.9) {
-        classification = "Peso normal";
+        classification = "Normal weight";
     } else if (imc >= 25 && imc < 29.9) {
-        classification = "Sobrepeso";
+        classification = "Overweight";
     } else {
-        classification = "Obesidade";
+        classification = "Obesity";
     }
 
     const handleMouseEnter = () => {
@@ -48,12 +48,12 @@ const Display = () => {
                     <table>
                         <tbody>
                             <tr>
-                                <td>peso:</td>
+                                <td>weight:</td>
                                 <td>{peso}</td>
                                 <td>kg</td>
                             </tr>
                             <tr>
-                                <td>altura:</td>
+                                <td>height:</td>
                                 <td>{altura}</td>
                                 <td>m</td>
                             </tr>
